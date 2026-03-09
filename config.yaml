@@ -1,0 +1,37 @@
+columns:
+  age:
+    type: int
+    missing_strategy: median
+
+  quantity:
+    type: int
+    missing_strategy: fill
+    fill_value: 0
+
+  cholesterol:
+    type: float
+    missing_strategy: keep
+
+  email:
+    type: string
+    missing_strategy: keep
+
+  phone_number:
+    type: string
+    missing_strategy: keep
+
+  price:
+    type: float
+    missing_strategy: drop
+
+  last_restocked:
+    type: datetime
+    missing_strategy: keep
+
+
+duplicates:
+  row_duplicates: remove
+  unique_columns:
+    - email
+    - phone_number
+
