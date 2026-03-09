@@ -1,0 +1,12 @@
+.env.dev
+.env.*
+
+.venv/
+venv/
+env/
+
+__pycache__/
+
+*.log
+logs/
+log/
